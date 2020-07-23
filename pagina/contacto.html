@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>contacto</title>
+  <link rel="shortcut icon" href="img/icono.jpg" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="./iconos/css/all.css">
+  <script src="js/jquery.js" ></script>
+  <script src="js/popper.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/contacto.js"></script>
+</head>
+<body>
+  <div class="contenedor">	
+    <nav id="encabezado" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+      <a class="navbar-brand" href="#">INMOBILIARIA</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item ">
+            <a class="nav-link" href="index.html">
+              <i class="fas fa-home"></i> Inicio 
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-building"></i> Inmuebles
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="apartamento.html">Apartamentos</a>
+              <a class="dropdown-item" href="casas.html">Casas</a>
+              <a class="dropdown-item" href="terrenos.html">Terrenos</a>
+              <a class="dropdown-item" href="garajes.html">Garajes</a>
+              <a class="dropdown-item" href="edificios.html">Edificios</a>
+              <a class="dropdown-item" href="locales.html">Locales</a>
+            </div>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contacto.html">
+              <i class="fas fa-address-book"></i> Contacto
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>	
+    <main>	
+	    <div class="row ">
+        <div class="contacto col-12 ">
+	        <img src="img/contacto.jpg" class="d-block w-100" height="450px">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="text-white display-1 ">contàctanos</h5>
+          </div> 
+        </div>
+      </div>
+      <div class="container">
+        <div class="d-sm-block mt-5 mb-5 pb-4">
+        	<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d3928.5666409490887!2d-69.36418888520534!3d10.052573292815136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1savenida%20los%20horcones%20con%20avenida%20la%20salle%20sector%20pueblo%20nuevo%20municipio%20iribarren%20parroquia%20juan%20de%20villegas!5e0!3m2!1ses-419!2sve!4v1594065573291!5m2!1ses-419!2sve" width="100%" height="500px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+      </div>
+      <div class="row mx-1 mb-3">
+        <div class="col-12">
+          <h2 class="contact-title font-weight-bol">Ponerse en contacto</h2>
+        </div>
+        <div class="col-lg-8">
+          <form class="form-contact" onsubmit="return validar();">
+            <div class="row">
+              <div class="col-12">
+                <div class="form-group">
+                  <textarea placeholder="Mensaje" id="mensaje" class="form-control w-100" cols="30" rows="9"  >
+                  </textarea>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" name="name" id="nombre" type="text" placeholder="Nombre" required >
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input class="form-control" id="correo" name="email" type="email" placeholder="Email" required >
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <input class="form-control" id="asunto" name="asunto"placeholder="Asunto" required >
+                </div>
+              </div>
+            </div>
+            <div class="form-group mt-3 text-center">
+              <button type="submit" class="btn btn-primary px-5">Enviar</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-lg-3 ">
+        	<div class=" text-center">
+            <div>
+              <i class="d-inline fas fa-map-marker-alt text-primary fa-2x fa-lg ">
+              </i>
+              <div>
+                <h4 class="font-weight-bol">Lara,Barquisimeto.</h4>
+                <p >Calle 28 entre Avenida Alianza y 33 Edif. Don Pedro, Piso 2. Ofic. 2-1, Centro</p>
+              </div>
+            </div>
+            <div>
+              <i class="d-inline text-primary fa-2x fa-lg fas fa-phone"></i>
+              <div>
+                <h4 class="font-weight-bol">+58 0255 664 3185<br>+58 0255 664 5536 <br>+58 0255 414 8287</h4>
+                <p>Lunes a Viernes 9am - 5pm</p>
+              </div>
+            </div>
+            <div>
+              <i class="d-inline text-primary fa-2x fa-lg fas fa-envelope	"></i>
+              <div>
+                <h4 class="font-weight-bol">consultas@gmail.com</h4>
+                <p>Envía tus preguntas!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+	    <div class="w-100">
+		    <img src="img/contacto2.jpg" class="w-100 " height="450px">
+	    </div>
+    </main>
+    <footer class="py-1">
+  	  <div class="row">
+  		  <div class="col col-6 p-3">
+  			  <h5 class="text-white ml-2">© Todos los Derechos Reservados - 2020 </h5>
+  		  </div>
+        <div class="col col-2 p-1">
+          <a href="#encabezado">
+            <i class="fas fa-angle-up text-white fa-2x fa-lg"></i>
+          </a>
+        </div>
+  		  <div class="col col-4 p-3 ">
+  			  <i class="fab fa-facebook-square text-white fa-2x fa-lg"></i>
+          <i class="fab fa-instagram text-white fa-2x fa-lg" ></i>
+          <i class="fab fa-whatsapp text-white fa-2x fa-lg"></i>
+          <i class="fab fa-twitter text-white fa-2x fa-lg"></i>
+          <i class="fab fa-pinterest text-white fa-2x fa-lg"></i>
+  		  </div>
+  	  </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+header{
+	height: 200px;
+	background-image: url(../img/encabezado.jpg);
+}
+
+h1{
+	font-size: 100px;
+	font-family: initial;
+	text-align: center;
+
+}
+nav{
+	background-color: #2e2e2e;
+
+}
+
+#menu{
+	position: fixed;
+	top: 0;
+	left:center;
+	width: 92%;
+}
+ .inmueble a:hover {
+  text-decoration: none;
+   }
+
+.caja{
+   margin-top: 8%;
+   margin-left: 23%;
+}
+  
+
+footer{
+	background-color: #2e2e2e;
+}
+
+.carousel-item .item1 h4{
+	position: absolute;
+	top: 35%;
+	left: 25%;
+	font-size: 100px;
+	font-family: initial;
+	color: white; 
+}
+
+.carousel-item .item2 h4{
+	position: absolute;
+	top: 35%;
+	left: 25%;
+	font-size: 100px;
+	font-family: initial; 
+	color: white;
+}
+
+.carousel-item .item3 h4{
+	position: absolute;
+	top: 35%;
+	left: 32%;
+	font-size: 100px;
+	font-family: initial; 
+    color: white;	
+}
+.carousel-item img:hover{
+	opacity: 0.8;
+}
+
+.dropdown-menu a:hover{
+	background-color: #292b2c;
+	color: white;
+}
+.dropdown-menu a:active{
+	background-color: #0275d8;
+}
+hr{
+	background-color: #0275d8;
+	width: 97%;
+}
+.card-text{
+	font-family: sans-serif;
+}
+
+ul li{
+	list-style: none;
+}
+
+.carousel-caption h5{
+	font-family: initial cursive;
+}
+
+.contacto:before {
+	content:'';
+	position: absolute;
+        top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(4,34,66,0.5);
+}
+.contact-title{
+	font-family: cursive;
+}
